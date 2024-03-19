@@ -1,9 +1,4 @@
-import 'package:flutter/material.dart';
-
-void main() {
-  runApp(const MyApp());
-}
-
+import 'package:flutter/material.dart';fdajgkasldflksadj;asdj
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
