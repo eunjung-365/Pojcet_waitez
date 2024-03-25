@@ -20,6 +20,11 @@ class StartPage extends StatelessWidget {
                     Navigator.pushNamed(context, '/c');
                   },
                   child: Text('비회원')),
+              TextButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/signup');
+                  },
+                  child: Text('회원가입')),
             ],
           ),
         ]),
