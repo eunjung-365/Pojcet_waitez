@@ -3,6 +3,8 @@ import 'StartPage.dart';
 import 'login.dart';
 import 'nonMember.dart';
 import 'signup.dart';
+import 'MainPage_member.dart';
+import 'MainPage_staff.dart';
 
 void main() => runApp(MyApp());
 
@@ -15,8 +17,10 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => StartPage(),
         '/login': (context) => login(),
-        '/c': (context) => nonMember(),
+        '/nonmember': (context) => nonMember(),
         '/signup': (context) => signup(),
+        '/MainPage_member': (context) => MainPage_member(),
+        '/MainPage_staff': (context) => MainPage_staff(),
       },
     );
   }
