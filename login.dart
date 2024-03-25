@@ -4,9 +4,6 @@ class login extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('로그인'),
-      ),
       body: SingleChildScrollView(
         child: Column(
           children: <Widget>[
@@ -27,7 +24,7 @@ class login extends StatelessWidget {
                             fontWeight: FontWeight.bold,
                             letterSpacing: 2.0),
                       ),
-                      SizedBox(height: 50),
+                      SizedBox(height: 30),
                       TextField(
                         decoration: InputDecoration(
                           border: OutlineInputBorder(),
@@ -44,7 +41,7 @@ class login extends StatelessWidget {
                           hintText: 'Enter secure password',
                         ),
                       ),
-                      SizedBox(height: 50),
+                      SizedBox(height: 10),
                       Row(
                         mainAxisAlignment: MainAxisAlignment
                             .center, // 가운데 정렬을 위한 MainAxisAlignment 설정
@@ -58,6 +55,53 @@ class login extends StatelessWidget {
                               ),
                             ),
                             child: Text('로그인'),
+                          ),
+                        ],
+                      ),
+                      SizedBox(height: 10),
+                      Text(
+                        '아이디 저장',
+                        style: TextStyle(fontSize: 10),
+                      ),
+                      SizedBox(height: 5),
+                      Text(
+                        'Forgot ID?',
+                        style: TextStyle(
+                            fontSize: 10,
+                            decoration: TextDecoration.underline,
+                            decorationColor: Colors.blue,
+                            color: Colors.blue),
+                      ),
+                      SizedBox(height: 5),
+                      Text(
+                        'Forgot Password?',
+                        style: TextStyle(
+                            fontSize: 10,
+                            decoration: TextDecoration.underline,
+                            decorationColor: Colors.blue,
+                            color: Colors.blue),
+                      ),
+                      SizedBox(height: 20),
+                      Text(
+                        'Waitez가 처음이신가요?',
+                        style: TextStyle(
+                          fontSize: 10,
+                        ),
+                      ),
+                      SizedBox(height: 10),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment
+                            .center, // 가운데 정렬을 위한 MainAxisAlignment 설정
+                        children: [
+                          ElevatedButton(
+                            onPressed: () {},
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor: Colors.white,
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(5),
+                              ),
+                            ),
+                            child: Text('회원가입'),
                           ),
                         ],
                       ),
