@@ -47,7 +47,9 @@ class login extends StatelessWidget {
                             .center, // 가운데 정렬을 위한 MainAxisAlignment 설정
                         children: [
                           ElevatedButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.pushNamed(context, '/MainPage_member');
+                            },
                             style: ElevatedButton.styleFrom(
                               backgroundColor: Colors.white,
                               shape: RoundedRectangleBorder(
@@ -94,7 +96,9 @@ class login extends StatelessWidget {
                             .center, // 가운데 정렬을 위한 MainAxisAlignment 설정
                         children: [
                           ElevatedButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.pushNamed(context, '/signup');
+                            },
                             style: ElevatedButton.styleFrom(
                               backgroundColor: Colors.white,
                               shape: RoundedRectangleBorder(
